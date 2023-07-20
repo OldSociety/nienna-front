@@ -4,7 +4,7 @@ function HeroModule2() {
   return (
     <div className="">
       <div className="container-fluid">
-        <div className="row">
+        <div className="row no-gutters">
           <div className="col-6 welcome-img">
             <img
               src={require('../Static/Clinician.jpg')}

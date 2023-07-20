@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroModule() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid no-gutters">
       <div className="heroModule font-weight-bold bg-light text-center">
         <div className="row">
           <div className="Why">Why Nienna?</div>
