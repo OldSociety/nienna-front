@@ -1,22 +1,26 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  position: relative;
-}
-
-img {
-  position: relative;
-  width: 100%;
-}
-
-.container-fluid {
-  margin: 0%;
-  padding: 0%;
-}
-
-header {
+// Reset some default browser styles
+html, body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Styles for all images
+  img {
+    position: relative;
+    width: 100%;
+  }
+  
+  // Reset margins and paddings for container-fluid
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Styles for header element
+  header {
     font-size: 15px;
     text-align: left;
     font-weight: bold;
@@ -27,34 +31,48 @@ header {
     width: 100%;
     margin-bottom: 0;
   }
-
+  
+  // Styles for the footer element
   footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding-bottom: 10px;
     font-size: small;
+    text-align: center;
+    background-color: lightblue; // Add a background color to visualize the footer
   }
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1.2fr);
-  grid-auto-rows: 45%;
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-.heroModule {
-    height: 100%;
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-
-  > .col,
-  > [class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
+  
+  // Styles for the wrapper container
+  .wrapper-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1.2fr);
+    grid-auto-rows: 45%;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex: 1; // Make sure the wrapper takes the remaining available space
+    overflow: hidden; // Prevent the footer from overlapping the heroModule
   }
-}
+  
+  // Styles for the heroModule
+  .heroModule {
+    flex: 1; // Allow the heroModule to take the remaining available space
+    display: flex; // Add flex display to expand child elements
+    justify-content: center; // Center the child elements horizontally
+    align-items: center; // Center the child elements vertically
+    background-color: pink; // Add a background color to visualize the heroModule
+  }
+  
+  // Remove gutters for columns
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  
+  // Reset margins for h1 and p elements
+  h1,
+  p {
+    margin: 0 0 1em;
+  }

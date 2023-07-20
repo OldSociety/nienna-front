@@ -9,7 +9,6 @@ function Home() {
     <div className="main-container mx-auto">
       <Header />
       <HeroModule2 />
-      <p />
       <HeroModule />
       <Footer />
     </div>

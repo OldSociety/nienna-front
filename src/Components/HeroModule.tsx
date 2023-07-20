@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 function HeroModule() {
   return (
-    <div className="container-fluid no-gutters">
-      <div className="heroModule font-weight-bold bg-light text-center">
-        <div className="row">
+    <div className="heroModule">
+      <div className="container-fluid">
+      <div className="row text-center">
           <div className="Why">Why Nienna?</div>
           <div className="row">
             <div className="col-4">Matched to Your Needs</div>
@@ -14,7 +14,7 @@ function HeroModule() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default HeroModule
+export default HeroModule;
