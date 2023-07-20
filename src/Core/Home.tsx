@@ -1,18 +1,19 @@
-import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import React from 'react'
+import Header from './Header'
+import HeroModule from '../Components/HeroModule'
+import HeroModule2 from '../Components/HeroModule2'
+import Footer from './Footer'
 
 function Home() {
   return (
     <div className="main-container mx-auto">
-      <div className="row">
-        <div className="col-lg-5 col-md-12">
-          <Header />
-          <Footer />
-        </div>
-      </div>
+      <Header />
+      <HeroModule2 />
+      <p />
+      <HeroModule />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -1,13 +1,26 @@
-import React from 'react';
+import React from 'react'
 
 function Footer() {
   return (
     <footer>
-      <ul className="ml-1 mt-8 flex items-center">
-2023
-      </ul>
+      <nav className="navbar fixed-bottom navbar-light bg-light">
+        <a className="navbar-brand" href="#">
+          Fixed bottom
+        </a>
+        <div className="row">
+        If you or someone you know is experiencing an emergency or crisis and needs immediate help, call 911 or go to the nearest emergency room. Here are some additional crisis resources.
+        <div className="row">
+          <div className="col-6">
+            @2023 Nienna Counciling
+          </div>
+          <div className="col-6">
+            support@niennacounseling.com
+          </div>
+        </div>
+        </div>
+      </nav>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
