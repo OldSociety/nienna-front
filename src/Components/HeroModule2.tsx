@@ -3,7 +3,7 @@ import React from 'react'
 function HeroModule2() {
   return (
     <div className="">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-6 welcome-img">
             <img
